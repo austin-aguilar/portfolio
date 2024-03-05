@@ -14,11 +14,11 @@ const Navbar = () => {
         <header>
             <h3>Austin Aguilar</h3>
             <nav ref={navRef}>
-                <a href="/#">Home</a>
-                <a href="/#">About Me</a>
-                <a href="/#">Projects</a>
-                <a href="/#">Resume</a>
-                <a href="/#">Contact</a>
+                <a href="/">Home</a>
+                <a href="/aboutme">About Me</a>
+                <a href="/projects">Projects</a>
+                <a href="/resume">Resume</a>
+                <a href="/contact">Contact</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>
                     <FaTimes />
                 </button>
