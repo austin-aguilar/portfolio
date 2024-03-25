@@ -1,9 +1,13 @@
-import React from 'react';
 import "./contact.css";
 
 const contact = () => {
     return (
-        <div>Contact</div>
+        <div className='contactContainer'>
+            <div>
+                <h3>Email:</h3>
+                
+            </div>
+        </div>
     )
 }
 
