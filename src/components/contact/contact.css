@@ -1,7 +1,6 @@
 .contactContainer {
     padding-top: 20vh;
     height: 80vh;
-    display: flex;
 }
 
 .contactContainer div {
@@ -9,4 +8,8 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 3vh;
+}
+
+.contactLinks a {
+    margin: 0 1rem;
 }
