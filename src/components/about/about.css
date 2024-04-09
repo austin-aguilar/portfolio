@@ -1,0 +1,26 @@
+.aboutContainer {
+    padding-top: 20vh;
+    height: 80vh;
+    display: flex;
+}
+
+.aboutContainer h2{
+    margin: 0 5rem;
+    padding-bottom: 1rem;
+}
+
+.aboutContainer p{
+    margin: 0 5rem;
+}
+
+.aboutBio {
+    flex: 2;
+}
+
+.favTechnologies div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2.5rem;
+    gap: 10px;
+}
+
