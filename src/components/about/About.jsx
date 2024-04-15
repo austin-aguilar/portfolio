@@ -10,7 +10,7 @@ const About = () => {
         <div className="aboutContainer">
             
             <div className="aboutBio">
-                <h2 className="AboutMe"> About Me</h2>
+                <h1 className="AboutMe"> About Me</h1>
                 <p>
                     Hello! My name is Austin Aguilar. I graduated with a BS in Mechanical Engineering in December 2023. Since the third year of my undergrad studies I have had a growing passion in joining the tech field.
                     Fueled by this passion, I have since made an effort to bridge the gap by completing a minor in Computer Science and completing multiple technical internships. I am planning to enroll into graduate school where I can earn a

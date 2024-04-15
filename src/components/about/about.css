@@ -1,12 +1,18 @@
 .aboutContainer {
-    padding-top: 20vh;
-    height: 80vh;
+    padding-top: 5vh;
+    height: 95vh;
     display: flex;
 }
 
+.aboutContainer h1{
+    margin: 0 5rem;
+    padding: 1.5rem 0rem;
+}
 .aboutContainer h2{
     margin: 0 5rem;
-    padding-bottom: 1rem;
+    padding-top: 5.5rem;
+    padding-bottom: 1.5rem;
+   
 }
 
 .aboutContainer p{
@@ -17,10 +23,26 @@
     flex: 2;
 }
 
-.favTechnologies div {
+.favTechnologiesIcons {
     display: flex;
     flex-direction: column;
     margin: 0 2.5rem;
-    gap: 10px;
+}
+.favTechnologiesIcons div {
+    display: flex;
+    flex-direction: row;
+    margin: 0 3rem;
+    gap: 25px;
+}
+.favTechnologiesIcons div span {
+    margin-top: -2.5px;
 }
 
+@media only screen and (max-width: 1024px) {
+    .aboutContainer{
+        flex-direction: column;
+    }
+    .aboutContainer h2 {
+        padding-top: 1.5rem;
+    }
+}

@@ -12,7 +12,9 @@ const Navbar = () => {
     
     return (
         <header>
-            <h3>Austin Aguilar</h3>
+                <a href="/">
+                    <h3 >Austin Aguilar</h3>
+                </a>       
             <nav ref={navRef}>
                 <a href="/">Home</a>
                 <a href="/aboutme">About Me</a>

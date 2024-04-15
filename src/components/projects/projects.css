@@ -1,0 +1,21 @@
+.projectCard img {
+    aspect-ratio: auto 3/2;
+    width: 30vh;
+    margin: 1rem 2.5rem;
+    border-radius: 4px;
+}
+.projectCard {
+    margin: 1rem 5rem;
+    min-width: 600px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    display: flex;
+    align-items: center;
+}
+
+.projectCardBody {
+    margin: auto 1rem;
+
+}
+

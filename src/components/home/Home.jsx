@@ -1,5 +1,5 @@
 import "./home.css";
-// import Austin from '../../assets/Austin_Photo.jpeg'
+import Austin from '../../assets/Austin_Photo.jpeg'
 import { SiGithub, SiLinkedin } from 'react-icons/si';
 import { Link } from "react-router-dom";
 import { MdEmail } from 'react-icons/md';
@@ -9,15 +9,18 @@ const Home = () => {
     
     return (
         <div className="homeContainer">
-            <div className="homeText">
+            <div className="photoContainer">
+                <img className='profilePhoto' src={Austin}/>
+            </div>
+            <div className="homeText">         
                 <p>Hi, I am <b>Austin Aguilar</b>. I am an aspiring Software Engineer currently based in Knoxville, Tennessee.</p>
             </div>
             <div className="aboutMeBtnContainer">
-                <div className="aboutMeBtn">
+                <div className="Btn">
                     <a href="/aboutme"> Learn More </a>
                 </div>
             </div>
-            <div className="professionalLinks">
+            <div className="contactLinks">
                     <Link to="https://github.com/austin-aguilar">
                         <SiGithub /> 
                     </Link>

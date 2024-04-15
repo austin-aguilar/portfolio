@@ -40,3 +40,40 @@
 .read-the-docs {
   color: #888;
 } */
+
+.header {
+  margin: 0 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.container {
+  padding-top: 5vh;
+  height: 95vh;
+}
+
+.contactLinks a {
+  margin: 0 1rem;
+  transition: all 0.2s ease-in-out; 
+}
+
+.contactLinks a:hover {
+  transform: translateY(-5px);
+}
+
+a:visited {
+  color: inherit; 
+}
+
+.Btn {
+  padding: 10px 20px; 
+  background-color: var(--first-color);
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: all 0.2s ease-in-out; 
+}
+
+.Btn:hover {
+  background-color: var(--hover-color); 
+  transform: scale(1.05); 
+}
