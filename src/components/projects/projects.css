@@ -6,7 +6,7 @@
 }
 .projectCard {
     margin: 1rem 5rem;
-    min-width: 600px;
+    /* min-width: 600px; */
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
@@ -19,3 +19,14 @@
 
 }
 
+@media only screen and (max-width: 1024px) {
+    .projectCard {
+        flex-direction: column;
+        width: 350px;
+        margin: 1rem auto;
+    }
+
+    .projectCard .Btn {
+        margin: 0 auto
+    }
+}

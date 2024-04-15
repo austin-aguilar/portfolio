@@ -10,7 +10,7 @@ const Card = (props) =>{
                 <p>{description}</p>
                 <p style={{marginTop: 10}}><b>Tech Used:</b> {tools}</p>
                 {projectLink && (
-                    <div className='Btn' style={{ padding: 5,marginTop: 10, display:'flex', justifyContent: 'center', width: '150px' }}>
+                    <div className='Btn' style={{ padding: 5,marginTop: 10, marginBottom: 10, display:'flex', justifyContent: 'center', width: '150px' }}>
                         <a href={projectLink}> View Project</a>
                     </div>
                 )}
