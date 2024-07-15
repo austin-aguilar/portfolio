@@ -29,10 +29,6 @@ const About = () => {
                     <MyIcon icon={<SiPostgresql/>} caption="PostgreSql"/>
                     <MyIcon icon={<SiExpress/>} caption="ExpressJs"/>
                 </div>
-     
-
-
-
             </div>
         </div>
     )
