@@ -47,8 +47,8 @@
 }
 
 .container {
-  padding-top: 5vh;
-  height: 95vh;
+  /* padding-bottom: 2vh; */
+  padding: 4vh 0;
 }
 
 .contactLinks a {

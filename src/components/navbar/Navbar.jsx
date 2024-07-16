@@ -17,7 +17,7 @@ const Navbar = ({ scrollFunc, home, about, projects, contactMe}) => {
     
     
     return (
-        <header>
+        <header className="navbar">
                 <a href="/">
                     <h3 >Austin Aguilar</h3>
                 </a>       

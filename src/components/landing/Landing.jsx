@@ -2,9 +2,11 @@ import React, { useRef } from 'react';
 import Navbar from '../navbar/Navbar';
 import Home from '../home/Home';
 import About from '../about/About';
-import Projects from '../projects/Projects';
 import Contact from '../contact/Contact';
-import contact from '../contact/Contact';
+import Projects from '../mappings/Projects';
+import  Experience from '../mappings/Experience';
+
+
 
 
 const Landing = () => {
@@ -12,10 +14,13 @@ const Landing = () => {
     const aboutRef = useRef(null);
     const projectRef = useRef(null);
     const contactRef = useRef(null);
+
     const scrollToSection = (sectionRef) => {
+        const navHeight = document.querySelector('.navbar').getBoundingClientRect().height;
+        const desiredOffset = sectionRef.current.offsetTop - navHeight;
         if (sectionRef.current) {
           window.scrollTo({
-            top: sectionRef.current.offsetTop,
+            top: desiredOffset ,
             behavior: 'smooth',
           });
         }
@@ -24,7 +29,7 @@ const Landing = () => {
 
     return(
         <div>
-            <Navbar scrollFunc={scrollToSection} home={homeRef} about={aboutRef} projects={projectRef} contactMe={contactRef} />
+            <Navbar className="navbar" scrollFunc={scrollToSection} home={homeRef} about={aboutRef} projects={projectRef} contactMe={contactRef} />
             
             <div ref={homeRef}>
                 <Home scrollFunc={scrollToSection} about={aboutRef} />
@@ -32,13 +37,15 @@ const Landing = () => {
             <div ref={aboutRef}>
                 <About />
             </div>
+            <div>
+                <Experience />
+            </div>
             <div ref={projectRef}>
                 <Projects />
             </div>
             <div ref={contactRef}>
                 <Contact />
             </div>
-
 
         </div>
     )

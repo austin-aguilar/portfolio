@@ -14,6 +14,6 @@ const MyIcon = ({icon, caption}) => {
   export default MyIcon
 
   MyIcon.propTypes = {
-    icon: PropTypes.func,
+    icon: PropTypes.object,
     caption: PropTypes.string,
   };
