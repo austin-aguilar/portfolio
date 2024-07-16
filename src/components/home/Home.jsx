@@ -4,7 +4,7 @@ import { SiGithub, SiLinkedin } from 'react-icons/si';
 import { Link } from "react-router-dom";
 import { MdEmail } from 'react-icons/md';
 
-const Home = () => {
+const Home = ( {scrollFunc, about}) => {
 
     
     return (
@@ -17,7 +17,7 @@ const Home = () => {
             </div>
             <div className="aboutMeBtnContainer">
                 <div className="Btn">
-                    <a href="/aboutme"> Learn More </a>
+                    <a onClick={() => scrollFunc(about)}> Learn More </a>
                 </div>
             </div>
             <div className="contactLinks">
