@@ -1,61 +1,14 @@
-/* .aboutContainer {
-    padding-top: 5vh;
-    height: 95vh;
-    display: flex;
-}
-
-.aboutContainer h1{
-    margin: 0 5rem;
-    padding: 1.5rem 0rem;
-}
-.aboutContainer h2{
-    margin: 0 5rem;
-    padding-top: 5.5rem;
-    padding-bottom: 1.5rem;
-   
-}
-
-.aboutContainer p{
-    margin: 0 5rem;
-} */
-
 .aboutBio {
     padding: 1rem 0;
 }
-
-/* .favTechnologiesIcons {
-    display: flex;
-    flex-direction: column;
-    margin: 0 2.5rem;
-}
-.favTechnologiesIcons div {
-    display: flex;
-    flex-direction: row;
-    margin: 0 3rem;
-    gap: 25px;
-}
-.favTechnologiesIcons div span {
-    margin-top: -2.5px;
-} */
-
-/* @media only screen and (max-width: 1024px) {
-    .aboutContainer{
-        flex-direction: column;
-    }
-    .aboutContainer h2 {
-        padding-top: 1.5rem;
-    }
-} */
-
 
 .favTechnologies {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
+    padding: 4rem 0rem; 
   }
-
-
 
 .techHeader {
     display:flex;
@@ -86,4 +39,14 @@
 
 .techCol b {
     padding: 1 0rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .favTechnologies {
+        padding: 1rem 0rem;
+    }
+    .aboutBio {
+        padding: 0.5rem 0rem;
+    }
+
 }

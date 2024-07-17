@@ -1,8 +1,5 @@
 
 import "./about.css";
-import Experience from '../mappings/Experience'
-import Education from '../mappings/Education'
-import Projects from "../mappings/Projects";
 import Technologies from "./Technologies";
 
 const About = () => {
@@ -19,7 +16,7 @@ const About = () => {
                 Computer Science degree part-time. In my current role as a Software Engineering Intern, I have grown my interest in data and machine learning. In this role I am gaining valuable experience with large language models, natural language processing,
                 and a variety of software development technologies.
             </p>
-            <Technologies />
+            <Technologies/>
         </div>
    
     )

@@ -12,7 +12,7 @@ const experience = () => {
         },
         {
             title:"Software Developement Intern",
-            company: "ITP Metrics",
+            company: "ITP Metrics; Remote",
             time:"August 2023 - January 2024",
             description: "Participated in the development of a web application for psychological research."
         },
@@ -21,6 +21,12 @@ const experience = () => {
             company: "University of Memphis; Memphis, TN",
             time: "September 2022 - December 2023",
             description: "Co-authored two papers on applying machine learning methods for study of computational fluid mechanics. "
+        },
+        {
+            title: "B.S. Mechanical Engineering, Minor in Computer Science",
+            company: "University of Memphis",
+            time: "2019-2023",
+            description: "Graduated Magna Cum Laude with University Honors"
         }
     ]
     
@@ -28,7 +34,7 @@ const experience = () => {
         <div>
 
             <div className='container'>
-                <h1>Experience</h1> 
+                <h1>My Journey</h1> 
                 {
                     experiences.map((job) =>(
                         <Card

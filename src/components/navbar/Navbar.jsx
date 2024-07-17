@@ -3,7 +3,7 @@ import "./navbar.css";
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 
-const Navbar = ({ scrollFunc, home, about, projects, contactMe}) => {
+const Navbar = ({ scrollFunc, home, about, experience, projects, contactMe}) => {
     const navRef = useRef();
 
     const showNavBar = (ref) => {
@@ -24,6 +24,7 @@ const Navbar = ({ scrollFunc, home, about, projects, contactMe}) => {
             <nav ref={navRef}>
                 <a onClick={() => showNavBar(home)}>Home</a>
                 <a onClick={() => showNavBar(about)}>About Me</a>
+                <a onClick={() => showNavBar(experience)}>Experience</a>
                 <a onClick={() => showNavBar(projects)}>Projects</a>
                 <a onClick={() => showNavBar(contactMe)}>Contact</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>

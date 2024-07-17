@@ -12,6 +12,7 @@ import  Experience from '../mappings/Experience';
 const Landing = () => {
     const homeRef = useRef(null);
     const aboutRef = useRef(null);
+    const experienceRef = useRef(null);
     const projectRef = useRef(null);
     const contactRef = useRef(null);
 
@@ -29,7 +30,7 @@ const Landing = () => {
 
     return(
         <div>
-            <Navbar className="navbar" scrollFunc={scrollToSection} home={homeRef} about={aboutRef} projects={projectRef} contactMe={contactRef} />
+            <Navbar className="navbar" scrollFunc={scrollToSection} home={homeRef} about={aboutRef} experience={experienceRef} projects={projectRef} contactMe={contactRef} />
             
             <div ref={homeRef}>
                 <Home scrollFunc={scrollToSection} about={aboutRef} />
@@ -37,7 +38,7 @@ const Landing = () => {
             <div ref={aboutRef}>
                 <About />
             </div>
-            <div>
+            <div ref={experienceRef}>
                 <Experience />
             </div>
             <div ref={projectRef}>
