@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 import "./navbar.css";
-import { FaBars, FaTimes } from 'react-icons/fa'
-import { Link } from 'react-scroll'
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = ({ scrollFunc, home, about, experience, projects, contactMe}) => {
     const navRef = useRef();
