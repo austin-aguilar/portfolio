@@ -1,12 +1,10 @@
-import "./projects.css";
+import Card from '../card/GenCard';
 
-import Card from './ProjectCard.jsx';
-
-const projects = () => {
+const Projects = () => {
     return (
         <div className='container'>
-            <h1 className ='header'> Projects</h1>
-            <div className='cardContainer'>
+            <h1> Projects</h1>
+            <div>
                 <Card 
                     title='Recommendation System'
                     description='Developed a machine learning pipeline to recommend atmospheric datasets to users using clustering and NLP.'
@@ -19,4 +17,4 @@ const projects = () => {
     )
 }
 
-export default projects;
+export default Projects;

@@ -1,48 +1,52 @@
-.aboutContainer {
-    padding-top: 5vh;
-    height: 95vh;
-    display: flex;
-}
-
-.aboutContainer h1{
-    margin: 0 5rem;
-    padding: 1.5rem 0rem;
-}
-.aboutContainer h2{
-    margin: 0 5rem;
-    padding-top: 5.5rem;
-    padding-bottom: 1.5rem;
-   
-}
-
-.aboutContainer p{
-    margin: 0 5rem;
-}
-
 .aboutBio {
-    flex: 2;
+    padding: 1rem 0;
 }
 
-.favTechnologiesIcons {
+.favTechnologies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 0rem; 
+  }
+
+.techHeader {
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 1 rem;
+}
+
+.techContainer {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 1rem; 
+}
+
+.techCols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 1rem; 
+}
+
+.techCol {
     display: flex;
     flex-direction: column;
-    margin: 0 2.5rem;
-}
-.favTechnologiesIcons div {
-    display: flex;
-    flex-direction: row;
-    margin: 0 3rem;
-    gap: 25px;
-}
-.favTechnologiesIcons div span {
-    margin-top: -2.5px;
+    align-items: center;
+  }
+
+.techCol b {
+    padding: 1 0rem;
 }
 
 @media only screen and (max-width: 1024px) {
-    .aboutContainer{
-        flex-direction: column;
+    .favTechnologies {
+        padding: 1rem 0rem;
     }
-    .aboutContainer h2 {
-        padding-top: 1.5rem;
+    .aboutBio {
+        padding: 0.5rem 0rem;
     }
+
 }
