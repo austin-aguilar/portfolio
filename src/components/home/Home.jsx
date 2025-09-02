@@ -13,7 +13,7 @@ const Home = ( {scrollFunc, about}) => {
                 <img className='profilePhoto' src={Austin}/>
             </div>
             <div className="homeText">         
-                <p>Hi, I am <b>Austin Aguilar</b>. I am an aspiring Software Engineer currently based in Knoxville, Tennessee.</p>
+                <p>Hi, I am <b>Austin Aguilar</b>. I am a Software Engineer currently based in Knoxville, Tennessee.</p>
             </div>
             <div className="aboutMeBtnContainer">
                 <div className="Btn">

@@ -5,9 +5,15 @@ import Card from '../card/GenCard.jsx';
 const experience = () => {
     const experiences = [
         {
+            title:"Software Engineer I",
+            company: "Oak Ridge National Laboratory; Oak Ridge, TN",
+            time:"December 2024 - Present",
+            description: "Drove end-to-end development of multiple scalable, user facing web applications."
+        },
+        {
             title:"Software Development Intern",
             company: "Oak Ridge National Laboratory; Oak Ridge, TN",
-            time:"May 2023-July 2023, January 2024 - Present",
+            time:"May 2023-July 2023, January 2024 - December 2024",
             description: "Assisting in the ARM Data Center"
         },
         {
