@@ -1,5 +1,5 @@
 import "./home.css";
-import Austin from '../../assets/Austin_Photo.png'
+import Austin from '../../assets/Austin_Photo2.png'
 import { SiGithub } from 'react-icons/si';
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
