@@ -1,8 +1,10 @@
 import "./home.css";
-import Austin from '../../assets/Austin_Photo.jpeg'
-import { SiGithub, SiLinkedin } from 'react-icons/si';
+import Austin from '../../assets/Austin_Photo.png'
+import { SiGithub } from 'react-icons/si';
+import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { MdEmail } from 'react-icons/md';
+import PropTypes from "prop-types";
 
 const Home = ( {scrollFunc, about}) => {
 
@@ -25,7 +27,7 @@ const Home = ( {scrollFunc, about}) => {
                         <SiGithub /> 
                     </Link>
                     <Link to="https://www.linkedin.com/in/austinaguilarmecs/">
-                        <SiLinkedin /> 
+                        <FaLinkedin /> 
                     </Link>
                     <Link to="mailto:austin47a@gmail.com">
                         <MdEmail/> 
@@ -34,5 +36,12 @@ const Home = ( {scrollFunc, about}) => {
         </div>
     )
 }
+
+
+
+Home.propTypes = {
+    scrollFunc: PropTypes.func.isRequired,
+    about: PropTypes.any.isRequired, // or be more specific if you know the type
+};
 
 export default Home;

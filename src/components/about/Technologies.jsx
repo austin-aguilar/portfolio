@@ -8,22 +8,44 @@ import {
     SiExpress, 
     SiNodedotjs, 
     SiFastapi,
-    SiGithub,
+    SiPandas,
     SiDocker,
-    SiAwsamplify,
     SiScikitlearn,
     SiJupyter,
-    SiPytorch,
+    SiLangchain,
+    SiHuggingface,
+    SiOpenai,
+
  } from 'react-icons/si';
+ import { VscMcp } from "react-icons/vsc";
 import MyIcon from "./MyIcon"
 
 const Technologies = () => {
     return (
         <div className="favTechnologies">
-                <h2 className="techHeader">Tech I've Used</h2>
+                <h2 className="techHeader">Tech Background </h2>
                 <div className="techContainer">
                     <div className="techCols">
                         <div className="techCol">
+                            <b>AI & LLMs</b>
+                            <MyIcon icon={<VscMcp/>} caption="MCP"/>
+                            <MyIcon icon={<SiHuggingface/>} caption="Hugging Face"/>
+                            <MyIcon icon={<SiLangchain/>} caption="LangChain"/>
+                            <MyIcon icon={<SiOpenai/>} caption="OpenAI Api"/>
+                        </div>
+                        <div className="techCol">
+                            <b>Data Stack</b>
+                            <MyIcon icon={<SiJupyter/>} caption="Jupyter"/>
+                            <MyIcon icon={<SiPandas/>} caption="Pandas"/>
+                            <MyIcon icon={<SiScikitlearn/>} caption="Scikit-Learn"/>
+                        </div>
+                        <div className="techCol">
+                            <b>Infrastructure</b>
+                            <MyIcon icon={<SiMongodb/>} caption="MongoDb"/>
+                            <MyIcon icon={<SiPostgresql/>} caption="PostgreSql"/>
+                            <MyIcon icon={<SiDocker/>} caption="Docker"/>
+                        </div>
+                         <div className="techCol">
                             <b>Languages</b>
                             <MyIcon icon={<SiPython/>} caption="Python"/>
                             <MyIcon icon={<SiJavascript/>} caption="Javascript"/>
@@ -39,26 +61,7 @@ const Technologies = () => {
                             <MyIcon icon={<SiExpress/>} caption="ExpressJs"/>
                             <MyIcon icon={<SiFastapi/>} caption="FastApi"/>
                         </div>
-                        <div className="techCol">
-                            <b>Database</b>
-                            <MyIcon icon={<SiMongodb/>} caption="MongoDb"/>
-                            <MyIcon icon={<SiPostgresql/>} caption="PostgreSql"/>
-                        </div>
-                        <div className="techCol">
-                            <b>Data Stack</b>
-                            <MyIcon icon={<SiJupyter/>} caption="Jupyter"/>
-                            <MyIcon icon={<SiScikitlearn/>} caption="Scikit-Learn"/>
-                            <MyIcon icon={<SiPytorch/>} caption="Pytorch"/>
-                        </div>
-                        <div className="techCol">
-                            <b>Tools</b>
-                            <MyIcon icon={<SiGithub/>} caption="Github"/>
-                            <MyIcon icon={<SiAwsamplify/>} caption="AWS Amplify"/>
-                            <MyIcon icon={<SiDocker/>} caption="Docker"/>
-                        </div>
-                    </div>
-   
-    
+                    </div> 
                 </div>
             </div>
     )

@@ -8,7 +8,7 @@ const experience = () => {
             title:"Software Engineer I",
             company: "Oak Ridge National Laboratory; Oak Ridge, TN",
             time:"December 2024 - Present",
-            description: "Drove end-to-end development of multiple scalable, user facing web applications."
+            description: "Majorly contributing to architecting scalable AI infrastructure and LLM applications for scientific workflows."
         },
         {
             title:"Software Development Intern",
@@ -44,6 +44,7 @@ const experience = () => {
                 {
                     experiences.map((job) =>(
                         <Card
+                            key={job.title}
                             title={job.title}
                             company={job.company}
                             time={job.time}

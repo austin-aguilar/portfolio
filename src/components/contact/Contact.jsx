@@ -1,5 +1,6 @@
 import "./contact.css";
-import { SiGithub, SiLinkedin } from 'react-icons/si';
+import { SiGithub } from 'react-icons/si';
+import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from 'react-icons/md';
 import { Link } from "react-router-dom";
 
@@ -14,7 +15,7 @@ const contact = () => {
                     <SiGithub size="32px" /> 
                 </Link>
                 <Link to="https://www.linkedin.com/in/austinaguilarmecs/">
-                    <SiLinkedin  size="32px"/> 
+                    <FaLinkedin  size="32px"/> 
                 </Link>
                 <Link to="mailto:austin47a@gmail.com">
                     <MdEmail  size="32px"/> 
