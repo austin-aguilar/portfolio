@@ -40,7 +40,7 @@ const experience = () => {
         <div>
 
             <div className='container'>
-                <h1>My Journey</h1> 
+                <h1>Career Highiglights</h1> 
                 {
                     experiences.map((job) =>(
                         <Card
