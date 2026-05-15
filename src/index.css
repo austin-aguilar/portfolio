@@ -96,6 +96,15 @@ img {
   padding-bottom: 2rem;
 }
 
+.section-divider {
+  width: 40px;
+  height: 3px;
+  background: var(--first-color);
+  border-radius: 2px;
+  margin-bottom: 2rem;
+}
+
+
 .section__title {
   font-size: var(--h1-font-size);
   margin-left: 0.875rem;

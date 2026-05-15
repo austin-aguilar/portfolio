@@ -4,7 +4,7 @@ import Home from '../home/Home';
 import About from '../about/About';
 import Contact from '../contact/Contact';
 import Projects from '../mappings/Projects';
-import  Experience from '../mappings/Experience';
+import  Experience from '../experience/Experience';
 
 
 
