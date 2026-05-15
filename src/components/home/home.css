@@ -1,20 +1,131 @@
-.homeContainer {
-    padding-top: 25vh;
-    height: 90vh;
-
-}
-
-.homeContainer div {
+.homeSection {
+    min-height: calc(100vh - 68px);
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 3vh;
-    text-align: center;
+    background: linear-gradient(140deg, #f8fafc 0%, #eef2ff 60%, #f8fafc 100%);
+}
+
+@media only screen and (max-width: 1024px) {
+    .homeSection {
+        align-items: flex-start;
+    }
+}
+
+.homeContent {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    width: 100%;
+}
+
+.homeText {
+    flex: 1;
+}
+
+.homeRole {
+    display: inline-block;
+    background: var(--first-color-light);
+    color: var(--first-color);
+    font-size: 0.78rem;
+    font-weight: var(--font-semibold);
+    padding: 0.35rem 0.25rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-bottom: 1.1rem;
+}
+
+.homeName {
+    font-size: clamp(2.4rem, 5vw, 3.6rem);
+    font-weight: 800;
+    color: var(--title-color);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.25rem;
+}
+
+.homeName span {
+    color: var(--first-color);
+}
+
+.homeDesc {
+    font-size: 1.05rem;
+    color: var(--text-color);
+    line-height: 1.8;
+    max-width: 480px;
+    margin-bottom: 2.25rem;
+}
+
+.homeActions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.homeSocials {
+    display: flex;
+    gap: 1rem;
+}
+
+.homeSocials a {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 1.35rem;
+    transition:
+        color 0.2s,
+        transform 0.2s;
+}
+
+.homeSocials a:hover {
+    color: var(--first-color);
+    transform: translateY(-3px);
+}
+
+.homePhotoCol {
+    flex-shrink: 0;
+}
+
+.photoRing {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, var(--first-color) 0%, #818cf8 100%);
+    box-shadow: 0 20px 60px rgba(67, 56, 202, 0.2);
 }
 
 .profilePhoto {
-    width: 150px;
-    height: auto;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    overflow: hidden;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+@media only screen and (max-width: 1024px) {
+    .homeContent {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2.5rem;
+        padding: 3rem 1.5rem;
+    }
+
+    .homeDesc {
+        max-width: 100%;
+    }
+
+    .homeActions {
+        justify-content: center;
+    }
+
+    .photoRing {
+        width: 200px;
+        height: 200px;
+    }
 }

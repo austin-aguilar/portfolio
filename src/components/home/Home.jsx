@@ -6,42 +6,49 @@ import { Link } from "react-router-dom";
 import { MdEmail } from 'react-icons/md';
 import PropTypes from "prop-types";
 
-const Home = ( {scrollFunc, about}) => {
+const Home = ({ scrollFunc, about }) => {
 
-    
+
     return (
-        <div className="homeContainer">
-            <div className="photoContainer">
-                <img className='profilePhoto' src={Austin}/>
-            </div>
-            <div className="homeText">         
-                <p>Hi, I am <b>Austin Aguilar</b>. I am a Software Engineer currently based in Knoxville, Tennessee.</p>
-            </div>
-            <div className="aboutMeBtnContainer">
-                <div className="Btn">
-                    <a onClick={() => scrollFunc(about)}> Learn More </a>
+        <section className="homeSection">
+            <div className="homeContent">
+                <div className="homeText">
+                    <span className="homeRole">Software Engineer</span>
+                    <h1 className="homeName">
+                        Austin <span>Aguilar</span>
+                    </h1>
+                    <p className="homeDesc">
+                        Building AI-driven systems at Oak Ridge National Laboratory.
+                        MSCS candidate at Georgia Tech, specializing in LLMs and scalable AI infrastructure.
+                    </p>
+                    <div className="homeActions">
+                        <a className="btn" onClick={() => scrollFunc(about)}>About Me</a>
+                        <div className="homeSocials">
+                            <Link to="https://github.com/austin-aguilar" target="_blank" rel="noreferrer">
+                                <SiGithub />
+                            </Link>
+                            <Link to="https://www.linkedin.com/in/austinaguilarmecs/" target="_blank" rel="noreferrer">
+                                <FaLinkedin />
+                            </Link>
+                            <Link to="mailto:austin47a@gmail.com">
+                                <MdEmail />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="homePhotoCol">
+                    <div className="photoRing">
+                        <img className="profilePhoto" src={Austin} alt="Austin Aguilar" />
+                    </div>
                 </div>
             </div>
-            <div className="contactLinks">
-                    <Link to="https://github.com/austin-aguilar">
-                        <SiGithub /> 
-                    </Link>
-                    <Link to="https://www.linkedin.com/in/austinaguilarmecs/">
-                        <FaLinkedin /> 
-                    </Link>
-                    <Link to="mailto:austin47a@gmail.com">
-                        <MdEmail/> 
-                    </Link>
-            </div>
-        </div>
+        </section>
     )
 }
 
-
-
 Home.propTypes = {
     scrollFunc: PropTypes.func.isRequired,
-    about: PropTypes.any.isRequired, // or be more specific if you know the type
+    about: PropTypes.any.isRequired,
 };
 
 export default Home;

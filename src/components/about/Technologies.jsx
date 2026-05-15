@@ -1,12 +1,12 @@
-import { 
-    SiPython, 
-    SiReact, 
-    SiVuedotjs, 
-    SiJavascript, 
-    SiMongodb, 
-    SiPostgresql, 
-    SiExpress, 
-    SiNodedotjs, 
+import {
+    SiPython,
+    SiReact,
+    SiVuedotjs,
+    SiJavascript,
+    SiMongodb,
+    SiPostgresql,
+    SiExpress,
+    SiNodedotjs,
     SiFastapi,
     SiPandas,
     SiDocker,
@@ -16,55 +16,79 @@ import {
     SiHuggingface,
     SiOpenai,
 
- } from 'react-icons/si';
- import { VscMcp } from "react-icons/vsc";
+} from 'react-icons/si';
+import { VscMcp } from "react-icons/vsc";
 import MyIcon from "./MyIcon"
 
-const Technologies = () => {
-    return (
-        <div className="favTechnologies">
-                <h2 className="techHeader">Tech Background </h2>
-                <div className="techContainer">
-                    <div className="techCols">
-                        <div className="techCol">
-                            <b>AI & LLMs</b>
-                            <MyIcon icon={<VscMcp/>} caption="MCP"/>
-                            <MyIcon icon={<SiHuggingface/>} caption="Hugging Face"/>
-                            <MyIcon icon={<SiLangchain/>} caption="LangChain"/>
-                            <MyIcon icon={<SiOpenai/>} caption="OpenAI Api"/>
-                        </div>
-                        <div className="techCol">
-                            <b>Data Stack</b>
-                            <MyIcon icon={<SiJupyter/>} caption="Jupyter"/>
-                            <MyIcon icon={<SiPandas/>} caption="Pandas"/>
-                            <MyIcon icon={<SiScikitlearn/>} caption="Scikit-Learn"/>
-                        </div>
-                        <div className="techCol">
-                            <b>Infrastructure</b>
-                            <MyIcon icon={<SiMongodb/>} caption="MongoDb"/>
-                            <MyIcon icon={<SiPostgresql/>} caption="PostgreSql"/>
-                            <MyIcon icon={<SiDocker/>} caption="Docker"/>
-                        </div>
-                         <div className="techCol">
-                            <b>Languages</b>
-                            <MyIcon icon={<SiPython/>} caption="Python"/>
-                            <MyIcon icon={<SiJavascript/>} caption="Javascript"/>
-                        </div>
-                        <div className="techCol">
-                            <b>FrontEnd</b>
-                            <MyIcon icon = {<SiReact/>} caption = "React" />
-                            <MyIcon icon = {<SiVuedotjs/>} caption = "VueJs" />
-                        </div>
-                        <div className="techCol">
-                            <b>Backend</b>
-                            <MyIcon icon={<SiNodedotjs/>} caption="NodeJs"/>
-                            <MyIcon icon={<SiExpress/>} caption="ExpressJs"/>
-                            <MyIcon icon={<SiFastapi/>} caption="FastApi"/>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-    )
-}
+const Badge = ({ icon, label }) => (
+    <span className="techBadge">
+        {icon}
+        {label}
+    </span>
+);
 
-export default Technologies
+const TechGroup = ({ name, badges }) => (
+    <div className="techGroup">
+        <span className="techGroupName">{name}</span>
+        <div className="techBadges">
+            {badges.map(b => <Badge key={b.label} icon={b.icon} label={b.label} />)}
+        </div>
+    </div>
+);
+
+
+const groups = [
+    {
+        name: "AI & LLMs",
+        badges: [
+            { icon: <SiLangchain />, label: "LangChain" },
+            { icon: <SiHuggingface />, label: "Hugging Face" },
+            { icon: <SiOpenai />, label: "OpenAI API" },
+            { icon: <VscMcp />, label: "MCP" },
+        ]
+    },
+    {
+        name: "Data Stack",
+        badges: [
+            { icon: <SiPython />, label: "Python" },
+            { icon: <SiJupyter />, label: "Jupyter" },
+            { icon: <SiPandas />, label: "Pandas" },
+            { icon: <SiScikitlearn />, label: "Scikit-Learn" },
+        ]
+    },
+    {
+        name: "Infrastructure",
+        badges: [
+            { icon: <SiDocker />, label: "Docker" },
+            { icon: <SiPostgresql />, label: "PostgreSQL" },
+            { icon: <SiMongodb />, label: "MongoDB" },
+        ]
+    },
+    {
+        name: "Frontend",
+        badges: [
+            { icon: <SiReact />, label: "React" },
+            { icon: <SiVuedotjs />, label: "Vue.js" },
+            { icon: <SiJavascript />, label: "JavaScript" },
+        ]
+    },
+    {
+        name: "Backend",
+        badges: [
+            { icon: <SiFastapi />, label: "FastAPI" },
+            { icon: <SiNodedotjs />, label: "Node.js" },
+            { icon: <SiExpress />, label: "Express" },
+        ]
+    },
+];
+
+const Technologies = () => (
+    <div className="techSection">
+        <p className="techSectionLabel">Tech Background</p>
+        <div className="techGroups">
+            {groups.map(g => <TechGroup key={g.name} name={g.name} badges={g.badges} />)}
+        </div>
+    </div>
+);
+
+export default Technologies;
