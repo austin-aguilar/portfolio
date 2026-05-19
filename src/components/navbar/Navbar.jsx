@@ -18,7 +18,7 @@ const Navbar = ({ scrollFunc, home, about, experience, projects, contactMe}) => 
     return (
         <header className="navbar">
                 <a href="/">
-                    <h3 >Austin Aguilar</h3>
+                    <h3 >Austin <span>Aguilar</span></h3>
                 </a>       
             <nav ref={navRef}>
                 <a onClick={() => showNavBar(home)}>Home</a>

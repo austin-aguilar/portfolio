@@ -1,0 +1,71 @@
+.projectsSection {
+  background: linear-gradient(180deg, var(--body-color) 0%, #eef2ff 100%);
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.projectCard {
+  background: var(--container-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: #c7d2fe;
+}
+
+.projectCardBody {
+  padding: 1.75rem;
+}
+
+.projectTitle {
+  font-size: 1rem;
+  font-weight: var(--font-bold);
+  color: var(--title-color);
+  margin-bottom: 0.6rem;
+}
+
+.projectDesc {
+  font-size: 0.875rem;
+  color: var(--text-color);
+  line-height: 1.7;
+  margin-bottom: 1.1rem;
+}
+
+.projectTools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.toolTag {
+  background: var(--first-color-light);
+  color: var(--first-color);
+  font-size: 0.75rem;
+  font-weight: var(--font-semibold);
+  padding: 0.22rem 0.65rem;
+  border-radius: 100px;
+}
+
+.projectLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--first-color);
+  font-size: 0.875rem;
+  font-weight: var(--font-semibold);
+  transition: gap 0.2s;
+}
+
+.projectLink:hover {
+  gap: 0.55rem;
+}

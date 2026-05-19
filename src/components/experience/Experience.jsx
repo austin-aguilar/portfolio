@@ -10,7 +10,7 @@ const experiences = [
         description: "Majorly contributing to architecting scalable AI infrastructure and LLM applications for scientific workflows.",
     },
     {
-        title: "Software Development Intern",
+        title: "Software Engineering Intern",
         company: "Oak Ridge National Laboratory",
         location: "Oak Ridge, TN",
         time: "May 2023 - December 2024",
@@ -32,13 +32,14 @@ const experiences = [
     },
 ];
 
-const education =  [
+const education = [
     {
         title: "M.S. Computer Science",
         company: "Georgia Institute of Technology",
-        location: "Atlanta, GA",
+        location: "Atlanta, GA (Remote)",
         time: "2024 - 2026",
-        description: "Specializing in AI, LLMs, and scalable AI infrastructure.",
+        description: "Specialization in Artifical Intelligence.",
+        courses: ["Knowledge-Based AI", "AI Ethics", "Machine Learning for Trading", "Data Analytics and Security"]
     },
     {
         title: "B.S. Mechanical Engineering, Minor in CS",
@@ -46,15 +47,13 @@ const education =  [
         location: "Memphis, TN",
         time: "2019 - 2023",
         description: "Graduated Magna Cum Laude with University Honors.",
+        courses: ["Object-Oriented Programming and Data Structures","Discrete Structures", "Design and Analysis of Algorithms"]
     },
 
 ]
-
-    
 const Experience = () => (
     <section className="section">
         <div className="container">
-            <span className="section-label">Background</span>
             <h2 className="section-title">Career</h2>
             <div className="section-divider"></div>
             <div className="timeline">
@@ -86,6 +85,12 @@ const Experience = () => (
                             </p>
                             <p className="timelineDate">{exp.time}</p>
                             <p className="timelineDesc">{exp.description}</p>
+                            {exp.courses && (
+                                <p className="timelineCourses">
+                                    <strong>Notable Courses: </strong>
+                                    {exp.courses.join(" · ")}
+                                </p>
+                            )}
                         </div>
                     </div>
                 ))}

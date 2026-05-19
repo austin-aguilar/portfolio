@@ -3,7 +3,7 @@ import Navbar from '../navbar/Navbar';
 import Home from '../home/Home';
 import About from '../about/About';
 import Contact from '../contact/Contact';
-import Projects from '../mappings/Projects';
+import Projects from '../projects/Projects';
 import  Experience from '../experience/Experience';
 
 
