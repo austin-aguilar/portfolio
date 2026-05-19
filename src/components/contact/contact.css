@@ -1,20 +1,58 @@
-.contactContainer {
-    padding-top: 35vh;
-    height: 90vh;
+.contactSection {
+  padding: 6rem 2rem;
+  background: linear-gradient(140deg, #eef2ff 0%, #f8fafc 100%);
+  text-align: center;
 }
 
-.contactContainer div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3vh;
+.contactInner {
+  max-width: 560px;
+  margin: 0 auto;
 }
 
-.contactLinks a {
-    margin: 0 1rem;
-    transition: all 0.2s ease-in-out; 
+.contactTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--title-color);
+  letter-spacing: -0.02em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
-.contactLinks a:hover {
-    transform: translateY(-5px);
+.contactDesc {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.7;
+  margin-bottom: 2.25rem;
+}
+
+.contactLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contactLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: var(--font-semibold);
+  padding: 0.65rem 1.4rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--container-color);
+  transition: border-color 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.contactLink svg {
+  font-size: 1.1rem;
+}
+
+.contactLink:hover {
+  border-color: var(--first-color);
+  color: var(--first-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
 }
