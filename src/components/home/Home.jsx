@@ -19,7 +19,7 @@ const Home = ({ scrollFunc, about }) => {
                     </h1>
                     <p className="homeDesc">
                         Building AI-driven systems at Oak Ridge National Laboratory.
-                        MSCS candidate at Georgia Tech, specializing in LLMs and scalable AI infrastructure.
+                        MSCS candidate at Georgia Tech, specializing in Artifical Intelligence.
                     </p>
                     <div className="homeActions">
                         <a className="btn" onClick={() => scrollFunc(about)}>About Me</a>
